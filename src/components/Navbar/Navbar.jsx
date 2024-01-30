@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
-import images from "../../constants/images";
+import {images} from "../../constants";
 
 import "./Navbar.css";
 
@@ -51,6 +51,7 @@ const Navbar = () => {
       </div>
       <div className="smallscreen_navbar">
         <GiHamburgerMenu
+          className="layout_open"
           color="#fff"
           fontSize={27}
           onClick={() => setToggle(true)}
